@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildsökmotor</title>
+    <link rel="stylesheet" href="Bild.css">
+    <script src="Bild.js" defer></script>
+</head>
+<body>
+    <h1 id="title">Pixabay Image Search</h1>
+    <section>
+    <form id="form">
+       <label id="search"><input type="text" name="search"></label>
+       <select name="" id="color">
+           <option value="">Any</option>
+           <option value="red">Red</option>
+           <option value="orange">Orange</option>
+           <option value="yellow">Yellow</option>
+           <option value="green">Green</option>
+       </select>
+       <button type="submit" id="submit">Submit</button>
+       <button type="button" id="previous">Previous</button>
+       <button type="button" id="next">Next</button>
+   </form>
+</section>
+<div id="Images"></div>
+</body>
+</html>
