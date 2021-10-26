@@ -1,0 +1,112 @@
+*{
+    font-family: "Oleo Script";
+    background-color: black;
+    margin: 10px;
+    padding: 0.5px;
+    color: white;
+}
+
+#images{
+    display: grid;
+    grid-template: 
+    "A B C D" 1fr
+    "E F G H" 1fr
+    "K I J L" auto / 1fr 1fr;
+    justify-content: space-between;
+}
+
+#div1{
+    grid-area: A;
+}
+
+#div2{
+    grid-area: B;
+}
+
+#div3{
+    grid-area: C;
+}
+
+#div4{
+    grid-area: D;
+}
+
+#div5{
+    grid-area: E;
+}
+
+#div6{
+    grid-area: F;
+}
+
+#div7{
+    grid-area: G;
+}
+
+#div8{
+    grid-area: H;
+}
+
+#div9{
+    grid-area: I;
+}
+
+#div10{
+    grid-area: J;
+}
+
+#next{
+    position: fixed;
+    left: 85%;
+    top: 90%;
+}
+
+#previous{
+    position: fixed;
+    right: 85%;
+    top: 90%;
+}
+
+#title{
+    text-align: center;
+}
+
+#form{
+    text-align: center;
+}
+
+img{
+    height: 144px;
+    width: 256px;
+}
+
+@media (max-width: 1250px){
+    #images{
+        grid-template: 
+        "A B C" 1fr
+        "D E F" 1fr
+        "G H I" 1fr
+        "K J L" auto / 1fr 1fr;
+    }
+} 
+
+ @media (max-width: 935px){
+    #images{
+        grid-template: 
+        "A B" 1fr
+        "C D" 1fr
+        "E F" 1fr
+        "G H" 1fr
+        "I J" auto / 1fr 1fr;
+    }
+} 
+
+ @media (max-width: 675px){
+    #images{
+        display: inline;
+    }
+
+    body{
+        display:inline;
+    }
+} 
