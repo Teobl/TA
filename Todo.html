@@ -12,14 +12,31 @@
     <h1 id="title">todos</h1>  
     
     <form id="form">
-        <input type="text" id="input" placeholder="What needs to be done?" autofocus>
-        <ul id="todos">
-        </ul>
-    </div> 
+        <div>
+            <button id="select" type="button">🔽</button>
+            <input type="text" id="start" placeholder="What needs to be done?" autofocus>
+        </div>
+    
+    <ul id="todos"></ul>
+
+    <footer id="extra" hidden>
+        <div id="contain">
+    <span>
+        <strong id="number"></strong>
+        <p id="item"></p>
+    </span>
+    <div id="filters">
+        <button value="all">All</button>
+        <button value="active">Active</button>
+        <button value="completed">Completed</button>
+    </div>
+        <button id="clear" value ="clear">Clear Completed</button>
+     </div>      
+    </footer>
     </form>
 </section>
 <footer id="footer">
     <p>Written by Teo Blazevic</p>
 </footer>
 </body>
-</html>
+</html>>
